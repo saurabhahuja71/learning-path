@@ -336,6 +336,19 @@ gh auth refresh -h github.com -s delete_repo
 | **Remove / merge** | `quantg-linux`, `quantr-linux` | Empty/private-only noise |
 | **Private only** | `Tradebots71` | Stay off public learning hub |
 
+
+### Empty / thin orgs status
+
+| Org | Status | Action taken / next |
+|-----|--------|---------------------|
+| `quantr-linux` | **Empty** (0 repos) | API delete needs `admin:org` scope. Delete in UI: org → Settings → Delete this organization. Or: `gh auth refresh -h github.com -s admin:org` then `gh api --method DELETE orgs/quantr-linux` |
+| `quantg-linux` | 1 private repo (`quantg-iso`) | Keep until you merge into quantdlinux or open-source the ISO |
+| `Utilties` | Cleaned | 31 forks **archived**; org profile README added; 6 active keepers |
+| `LeafixOS` | Active experiment | `leafix-iso` README improved; still needs ISO build docs |
+| `quantdlinux` | Active | Already has solid `quantd-iso` README — good public distro lab |
+| `Tradebots71` | Private bots | Leave private |
+
+
 ### Profile visibility
 
 Currently **only `oracle` is public** on the GitHub profile org list. Other orgs are private membership or not shown—fine for experiments; promote an org only when its README and purpose are clear.

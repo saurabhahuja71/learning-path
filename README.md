@@ -23,6 +23,7 @@ These are **practice labs**, not production frameworks. Each track is ordered fr
 | [Terraform & IaC](#5-terraform--infrastructure-as-code) | Infra as code (OCI / Azure / AWS ideas) | 3 |
 | [CI/CD](#6-cicd) | GitHub Actions, pipelines | 1 |
 | [AI & Agents](#7-ai--agents--mcp) | MCP, agents, Redis+AI | 4 |
+| [Oracle Linux & systems](#oracle-linux--systems) | OL tutorials, UEK, containers, QEMU, VPN | curated |
 | [Systems & fun projects](#8-systems--side-projects) | Raspberry Pi, VPN, Rust, VB | 6 |
 | [Frontend / fullstack](#9-frontend--fullstack) | React + backend samples | 3 |
 
@@ -131,7 +132,61 @@ Do them in order:
 | 2 | [agentic-ai-sample](https://github.com/saurabhahuja71/agentic-ai-sample) — *LangChain ReAct agent* | Intermediate | OpenAI + Tavily search loop | README ready |
 | 3 | [workshop-redis-ai](https://github.com/saurabhahuja71/workshop-redis-ai) — *Redis vector search & RAG* | Intermediate | Hybrid search, semantic cache, guardrails | README ready |
 
+## Oracle Linux & systems
+
+**Oracle Linux learning path** for students and engineers—plus links where this maintainer **actively participates** in Oracle open source (containers, database images, operators).
+
+### A. Official Oracle Linux learning (start here)
+
+Study and contribute **upstream** (do not rely on stale personal forks of huge trees):
+
+| # | Upstream project | What you'll learn |
+|---|------------------|-------------------|
+| 1 | [oracle/oracle-linux](https://github.com/oracle/oracle-linux) | Scripts, examples, tutorials to get started with **Oracle Linux** |
+| 2 | [oracle/migrate-to-ol](https://github.com/oracle/migrate-to-ol) | Migrate existing systems **to Oracle Linux** |
+| 3 | [oracle/container-images](https://github.com/oracle/container-images) | Official **Oracle Linux container images** |
+| 4 | [oracle/linux-uek](https://github.com/oracle/linux-uek) | **Unbreakable Enterprise Kernel (UEK)** sources |
+| 5 | [oracle/bpftune](https://github.com/oracle/bpftune) | BPF-based auto-tuning on Linux |
+| 6 | [oracle/dtrace](https://github.com/oracle/dtrace) | DTrace on Linux |
+| 7 | [oracle/qemu](https://github.com/oracle/qemu) | QEMU tree used in Oracle contexts |
+
+Docs worth bookmarking: [docs.oracle.com/oracle-linux](https://docs.oracle.com/en/operating-systems/oracle-linux/) · [yum.oracle.com](https://yum.oracle.com/)
+
+### B. Active open-source participation (containers & data)
+
+These are **not “toy labs”**—they are production Oracle OSS repos this maintainer contributes to via PRs:
+
+| Project | Focus | How to learn |
+|---------|--------|--------------|
+| [oracle/docker-images](https://github.com/oracle/docker-images) | Dockerfiles for Oracle Database, Java, Instant Client, … | Read `OracleDatabase/`, build lab images, study PR history |
+| [oracle/oracle-database-operator](https://github.com/oracle/oracle-database-operator) | Kubernetes operator for Oracle Database | Operator patterns on OL/OKE-style clusters |
+
+Personal working fork (for PRs only—prefer upstream for students): [saurabhahuja71/docker-images](https://github.com/saurabhahuja71/docker-images)
+
+### C. Personal companion labs (SEO READMEs)
+
+| Lab | Level | Practice |
+|-----|-------|----------|
+| [raspios-qemu](https://github.com/saurabhahuja71/raspios-qemu) | Intermediate | **QEMU aarch64 on Oracle Linux 9** hosts (bundle pattern when packages are missing) |
+| [oraclevpn](https://github.com/saurabhahuja71/oraclevpn) | Intermediate | **Podman** + OpenConnect/AnyConnect-style VPN container |
+| [hello](https://github.com/saurabhahuja71/hello) | Beginner+ | Multi-arch **buildah/Docker** images (amd64/arm64) |
+
+### Suggested 2-week OL starter plan
+
+| Week | Focus | Actions |
+|------|--------|---------|
+| 1 | Install & basics | Install OL (or OL container), work through [oracle/oracle-linux](https://github.com/oracle/oracle-linux), try [migrate-to-ol](https://github.com/oracle/migrate-to-ol) docs |
+| 1 | Containers | Pull/build from [container-images](https://github.com/oracle/container-images); multi-arch with [hello](https://github.com/saurabhahuja71/hello) |
+| 2 | Virtualization | [raspios-qemu](https://github.com/saurabhahuja71/raspios-qemu) on an OL9 laptop/server |
+| 2 | Product containers | Skim [docker-images](https://github.com/oracle/docker-images) `OracleDatabase` samples (licensing applies) |
+
+### SEO tags for this track
+
+`oracle-linux` `uek` `enterprise-linux` `podman` `qemu` `containers` `oracle-database` `docker-images` `ol9` `linux-admin` `tutorial`
+
 ## 8. Systems & side projects
+
+> Prefer the **[Oracle Linux & systems](#oracle-linux--systems)** track for OL/UEK/container study. This section keeps smaller personal experiments.
 
 | Lab | Notes |
 |-----|--------|
@@ -198,7 +253,7 @@ Keep PRs small and focused. Prefer clarity over cleverness.
 
 ## About the author
 
-**Saurabh Ahuja** — Principal Member of Technical Staff (Oracle), cloud & infrastructure, Kubernetes, Go, operators.
+**Saurabh Ahuja** — Principal Member of Technical Staff (Oracle), cloud & infrastructure, **Oracle Linux**, Kubernetes, Go, operators, and Oracle container images.
 
 - Profile: [saurabhahuja71](https://github.com/saurabhahuja71)
 - Site: [saurabhahuja71.github.io](https://saurabhahuja71.github.io)
@@ -212,4 +267,4 @@ Each lab keeps its **own** license (or none yet). Check the individual repositor
 
 ---
 
-*Progress: hub live → Helidon → Go → Python → AI/MCP → **Terraform/CI SEO READMEs done** → next: open private demos or cleanup empty/forks.*
+*Progress: hub + Helidon + Go + Python + AI/MCP + Terraform/CI + **Oracle Linux track** → next: open private demos or cleanup.*

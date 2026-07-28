@@ -25,6 +25,7 @@ These are **practice labs**, not production frameworks. Each track is ordered fr
 | [AI & Agents](#7-ai--agents--mcp) | MCP, agents, Redis+AI | 4 |
 | [Oracle Linux & systems](#oracle-linux--systems) | OL tutorials, UEK, containers, QEMU, VPN | curated |
 | [Systems & fun projects](#8-systems--side-projects) | Raspberry Pi, VPN, Rust, VB | 6 |
+| [Organizations review](#organizations-review--all-github-orgs) | Every org you belong to + cleanup notes | 7 orgs |
 | [Frontend / fullstack](#9-frontend--fullstack) | React + backend samples | 3 |
 
 ---
@@ -251,6 +252,84 @@ Keep PRs small and focused. Prefer clarity over cleverness.
 
 ---
 
+## Organizations review — all GitHub orgs
+
+Complete inventory of GitHub **organizations** associated with [@saurabhahuja71](https://github.com/saurabhahuja71) (from API membership). Use this section to decide what students should follow vs what to archive or hide.
+
+| Org | Role | Public on profile? | Public repos (approx.) | Purpose (today) | Student relevance | Suggested action |
+|-----|------|--------------------|------------------------|-----------------|-------------------|------------------|
+| [oracle](https://github.com/oracle) | member | **Yes** | ~315 | Open Source at Oracle (Graal, OCI SDKs, WebLogic, docker-images, OL, …) | **High** — primary professional OSS | Keep; link from Oracle Linux & container tracks |
+| [Utilties](https://github.com/Utilties) *(name spelling)* | **admin** | No | ~35 | “Placeholder for forked repos” + skills sandboxes | **Low** for portfolio | Review forks; delete unused; rename org if kept |
+| [LeafixOS](https://github.com/LeafixOS) | **admin** | No | 3 | Arch-based OS experiment (`leafix-iso`, forum) | Medium if ISO is real | Fill READMEs or archive if abandoned |
+| [quantdlinux](https://github.com/quantdlinux) | **admin** | No | 2 | Debian-based QuantD Linux (`quantd-iso`, site) | Medium (distro/ISO learners) | SEO README + link from systems track if active |
+| [quantg-linux](https://github.com/quantg-linux) | **admin** | No | 0 public (`quantg-iso` private) | QuantG ISO placeholder | Low until public | Publish or merge into quantdlinux |
+| [quantr-linux](https://github.com/quantr-linux) | **admin** | No | 0 | Empty org | None | **Delete org** or park a single README |
+| [Tradebots71](https://github.com/Tradebots71) | **admin** | No | 0 public (private trading bots) | Covered-call / m.Stock bots | None for public students | Keep private; never expose keys; optional later “paper trading” lab |
+
+### Org-by-org notes
+
+#### 1. `oracle` — keep & highlight
+
+- **What it is:** Oracle’s main public OSS org ([developer.oracle.com/open-source](https://developer.oracle.com/open-source.html)).
+- **Why it matters for students:** production-grade code, real PR process, Oracle Linux, containers, operators, Graal, OCI SDKs.
+- **Your angle:** active PRs on **docker-images**, **oracle-database-operator**, plus OL/UEK/container learning path above.
+- **Do not** treat personal forks as the source of truth—send students to `oracle/...` upstream.
+
+#### 2. `Utilties` — cleanup candidate
+
+- **What it is:** Admin org described as *“Placeholder for forked repos”* (note the spelling **Utilties**).
+- **Contains:** forks such as `docker-images`, `oracle-database-operator`, GitHub Skills sandboxes (`introduction-to-github`, …), private `oraclelinux-docker` / `ubuntu-docker`.
+- **Problem:** duplicates personal forks; noisy for discovery; typo in org name.
+- **Suggested cleanup:**
+  1. List every repo → keep only forks with **open PRs** or unique commits.
+  2. Delete skills one-shot repos after completion.
+  3. Either rename org to something clear (`saurabh-forks`) or fold remaining work under the user account.
+  4. Document in org profile README: “Working forks only — prefer upstream.”
+
+#### 3. `LeafixOS` — productize or archive
+
+- Repos: `leafix-iso`, `leafix-forum`, `.github`.
+- If ISO builds still matter: add SEO READMEs + install docs + link from systems track.
+- If not maintained: archive the org repos and pin a “historical” note.
+
+#### 4. `quantdlinux` — distro track (active-ish)
+
+- `quantd-iso` — Debian-based ISO (you already merged prep/release PRs).
+- `quantdlinux.github.io` — project site.
+- **Next:** student-facing README (build ISO, burn, first boot), screenshots, license clarity.
+- Optional: link under [Oracle Linux & systems](#oracle-linux--systems) as “related community distro experiments” only if you want that brand public.
+
+#### 5. `quantg-linux` / `quantr-linux` — empty or private-only
+
+- **quantg-linux:** private `quantg-iso` only → either open-source with README or delete org.
+- **quantr-linux:** zero repos → **delete** empty org to reduce clutter.
+
+#### 6. `Tradebots71` — keep private
+
+- Private: `covered_call_bot`, `covered_call_bot_mstock`.
+- **Not** part of the public student curriculum (financial risk + secrets).
+- Hard rules: no API keys in git; prefer paper/sandbox modes; separate from `learning-path`.
+
+### Summary scorecard
+
+| Priority | Orgs | Action |
+|----------|------|--------|
+| **Strategic** | `oracle` | Feature in hub + profile; contribute upstream |
+| **Tidy** | `Utilties` | Cull forks/skills; rename or document |
+| **Decide** | `LeafixOS`, `quantdlinux` | Ship docs or archive |
+| **Remove / merge** | `quantg-linux`, `quantr-linux` | Empty/private-only noise |
+| **Private only** | `Tradebots71` | Stay off public learning hub |
+
+### Profile visibility
+
+Currently **only `oracle` is public** on the GitHub profile org list. Other orgs are private membership or not shown—fine for experiments; promote an org only when its README and purpose are clear.
+
+### Related links
+
+- Student hub: [learning-path](https://github.com/saurabhahuja71/learning-path)
+- Oracle Linux track: [Oracle Linux & systems](#oracle-linux--systems)
+- Profile: [saurabhahuja71.github.io](https://saurabhahuja71.github.io)
+
 ## About the author
 
 **Saurabh Ahuja** — Principal Member of Technical Staff (Oracle), cloud & infrastructure, **Oracle Linux**, Kubernetes, Go, operators, and Oracle container images.
@@ -267,4 +346,4 @@ Each lab keeps its **own** license (or none yet). Check the individual repositor
 
 ---
 
-*Progress: hub + Helidon + Go + Python + AI/MCP + Terraform/CI + **Oracle Linux track** → next: open private demos or cleanup.*
+*Progress: hub + curriculum tracks + Oracle Linux + **orgs review** → next: Utilties/empty-org cleanup or open private demos.*

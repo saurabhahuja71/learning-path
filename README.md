@@ -276,6 +276,21 @@ Complete inventory of GitHub **organizations** associated with [@saurabhahuja71]
 - **Do not** treat personal forks as the source of truth—send students to `oracle/...` upstream.
 
 #### 2. `Utilties` — cleanup candidate
+### Utilties cleanup status (safe batch)
+
+**Planned keep:** `docker-images`, `oracle-database-operator` (forks), plus originals `raspberrypios`, `oraclelinux-docker`, `ubuntu-docker`, `paxosworkshop`.
+
+**Planned delete (31 one-shot forks):** GitHub Skills (`introduction-to-github`, `hello-github-actions`, `github-pages`, `communicate-using-markdown`, `review-pull-requests`), `Spoon-Knife`, and unused forks (`grafana`, `kubespray`, `fzf`, `nushell`, `bottlerocket`, `meetup-golang`, …).
+
+**Blocked:** GitHub CLI token is missing the `delete_repo` scope (`HTTP 403`). To finish cleanup on a machine with `gh` logged in as org admin:
+
+```bash
+gh auth refresh -h github.com -s delete_repo
+# then run the safe-batch script (saved as utilties-safe-cleanup.sh) or:
+# for each non-keeper fork: gh repo delete Utilties/NAME --yes
+```
+
+
 
 - **What it is:** Admin org described as *“Placeholder for forked repos”* (note the spelling **Utilties**).
 - **Contains:** forks such as `docker-images`, `oracle-database-operator`, GitHub Skills sandboxes (`introduction-to-github`, …), private `oraclelinux-docker` / `ubuntu-docker`.

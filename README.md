@@ -98,25 +98,27 @@ Do them in order:
 
 ## 5. Terraform & infrastructure as code
 
-| # | Lab | Level | What you'll practice |
-|---|-----|-------|----------------------|
-| 1 | [oci_terraform_samples](https://github.com/saurabhahuja71/oci_terraform_samples) | Beginner → Intermediate | Terraform on Oracle Cloud |
-| 2 | [oci_ansible_samples](https://github.com/saurabhahuja71/oci_ansible_samples) | Beginner → Intermediate | Ansible on OCI |
-| 3 | [terraform-azure-jenkins-sample](https://github.com/saurabhahuja71/terraform-azure-jenkins-sample) | Intermediate | Azure + Jenkins via Terraform |
+**IaC tutorials for students** — Oracle Cloud with Terraform/Ansible, Azure Jenkins, plus private samples coming later. SEO-friendly READMEs on each public lab.
 
-**Coming soon (private):** AWS / GCP / EKS / GKE Terraform basics and larger Azure static+dynamic web sample.
+| # | Lab | Level | What you'll practice | Status |
+|---|-----|-------|----------------------|--------|
+| 1 | [oci_terraform_samples](https://github.com/saurabhahuja71/oci_terraform_samples) — *Terraform on OCI* | Intermediate | VCN, compute, LB, buckets, modules | README ready |
+| 2 | [oci_ansible_samples](https://github.com/saurabhahuja71/oci_ansible_samples) — *Ansible on OCI* | Intermediate | Playbooks, facts, httpd | README ready |
+| 3 | [terraform-azure-jenkins-sample](https://github.com/saurabhahuja71/terraform-azure-jenkins-sample) — *Jenkins on Azure VM* | Intermediate | azurerm + bootstrap script | README ready |
 
----
+**Coming soon (private):** AWS/GCP/EKS/GKE Terraform basics, larger Azure web sample, Helm basics.
 
 ## 6. CI/CD
 
-| # | Lab | Level | What you'll practice |
-|---|-----|-------|----------------------|
-| 1 | [github-action-demo](https://github.com/saurabhahuja71/github-action-demo) | Beginner | GitHub Actions intro |
+**CI/CD tutorials for students** — GitHub Actions custom actions and repo hygiene templates. Jenkins-on-VM is under the Terraform track.
+
+| # | Lab | Level | What you'll practice | Status |
+|---|-----|-------|----------------------|--------|
+| 1 | [github-action-demo](https://github.com/saurabhahuja71/github-action-demo) — *Docker container action* | Beginner | action.yml, Dockerfile, workflow | README ready |
+| 2 | [sample-template-repo](https://github.com/saurabhahuja71/sample-template-repo) — *GitHub template hygiene* | Beginner | README, SECURITY, CONTRIBUTING | README ready |
+| — | [terraform-azure-jenkins-sample](https://github.com/saurabhahuja71/terraform-azure-jenkins-sample) | Intermediate | Self-hosted Jenkins via Terraform | README ready |
 
 **Coming soon (private):** Jenkins sample pipelines.
-
----
 
 ## 7. AI · Agents · MCP
 
@@ -210,4 +212,4 @@ Each lab keeps its **own** license (or none yet). Check the individual repositor
 
 ---
 
-*Progress: hub live → Helidon → Go → Python → **AI/MCP track SEO READMEs done** → next (Terraform/CI or open private demos) → retire empty shells.*
+*Progress: hub live → Helidon → Go → Python → AI/MCP → **Terraform/CI SEO READMEs done** → next: open private demos or cleanup empty/forks.*

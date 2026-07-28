@@ -120,16 +120,14 @@ Do them in order:
 
 ## 7. AI · Agents · MCP
 
-Newer labs — good if you want current AI tooling, not only classic backend.
+**Modern AI labs for students** — Model Context Protocol, terminal agents, LangChain ReAct, and Redis RAG. Each has an SEO-friendly README (tutorial title, FAQ, keywords).
 
-| # | Lab | Level | What you'll practice |
-|---|-----|-------|----------------------|
-| 1 | [mcp-demo](https://github.com/saurabhahuja71/mcp-demo) | Beginner → Intermediate | Model Context Protocol basics |
-| 2 | [agentic-ai-sample](https://github.com/saurabhahuja71/agentic-ai-sample) | Intermediate | Agentic AI sample |
-| 3 | [agenterm](https://github.com/saurabhahuja71/agenterm) | Intermediate | Agent terminal / tooling |
-| 4 | [workshop-redis-ai](https://github.com/saurabhahuja71/workshop-redis-ai) | Intermediate | Redis + AI workshop |
-
----
+| # | Lab | Level | What you'll practice | Status |
+|---|-----|-------|----------------------|--------|
+| 0 | [mcp-demo](https://github.com/saurabhahuja71/mcp-demo) — *MCP server in Go* | Beginner → Intermediate | Tools, stdio/HTTP, Docker | README ready |
+| 1 | [agenterm](https://github.com/saurabhahuja71/agenterm) — *Terminal AI agent + MCP client* | Intermediate | Ollama/OpenAI TUI, tools | README ready |
+| 2 | [agentic-ai-sample](https://github.com/saurabhahuja71/agentic-ai-sample) — *LangChain ReAct agent* | Intermediate | OpenAI + Tavily search loop | README ready |
+| 3 | [workshop-redis-ai](https://github.com/saurabhahuja71/workshop-redis-ai) — *Redis vector search & RAG* | Intermediate | Hybrid search, semantic cache, guardrails | README ready |
 
 ## 8. Systems & side projects
 
@@ -212,4 +210,4 @@ Each lab keeps its **own** license (or none yet). Check the individual repositor
 
 ---
 
-*Progress: hub live → Helidon → Go → **Python track SEO READMEs done** → next (AI/MCP) → open private demos → retire empty shells.*
+*Progress: hub live → Helidon → Go → Python → **AI/MCP track SEO READMEs done** → next (Terraform/CI or open private demos) → retire empty shells.*

@@ -276,18 +276,19 @@ Complete inventory of GitHub **organizations** associated with [@saurabhahuja71]
 - **Do not** treat personal forks as the source of truth—send students to `oracle/...` upstream.
 
 #### 2. `Utilties` — cleanup candidate
-### Utilties cleanup status (safe batch)
+### Utilties cleanup status (safe batch) — done via archive
 
-**Planned keep:** `docker-images`, `oracle-database-operator` (forks), plus originals `raspberrypios`, `oraclelinux-docker`, `ubuntu-docker`, `paxosworkshop`.
+**Active keepers (6):**
+- Forks: `docker-images`, `oracle-database-operator`
+- Originals: `raspberrypios`, `oraclelinux-docker` (private), `ubuntu-docker` (private), `paxosworkshop`
 
-**Planned delete (31 one-shot forks):** GitHub Skills (`introduction-to-github`, `hello-github-actions`, `github-pages`, `communicate-using-markdown`, `review-pull-requests`), `Spoon-Knife`, and unused forks (`grafana`, `kubespray`, `fzf`, `nushell`, `bottlerocket`, `meetup-golang`, …).
+**Archived (31 one-shot forks):** GitHub Skills repos, `Spoon-Knife`, and unused forks (`grafana`, `kubespray`, `fzf`, `nushell`, `bottlerocket`, `meetup-golang`, …). Archived = read-only and hidden from normal “active” browsing; can un-archive later.
 
-**Blocked:** GitHub CLI token is missing the `delete_repo` scope (`HTTP 403`). To finish cleanup on a machine with `gh` logged in as org admin:
+**Hard delete (optional later):** token needs `delete_repo` scope:
 
 ```bash
 gh auth refresh -h github.com -s delete_repo
-# then run the safe-batch script (saved as utilties-safe-cleanup.sh) or:
-# for each non-keeper fork: gh repo delete Utilties/NAME --yes
+~/utilties-safe-cleanup.sh   # deletes non-keeper forks permanently
 ```
 
 

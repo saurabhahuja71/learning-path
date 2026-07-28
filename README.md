@@ -63,18 +63,20 @@ Learn idiomatic Go, HTTP APIs, gRPC, and workshop-style exercises.
 
 ## 3. Java · Helidon microservices
 
-Treat the Helidon repos as a **mini course**. Do them in order.
+**Helidon MicroProfile tutorials for students** — a numbered mini-course from unit testing to Slack integration. Each lab has an SEO-friendly README (tutorial title, FAQ, keywords) so Google and GitHub search can find them.
 
-| # | Lab | Level | What you'll practice |
-|---|-----|-------|----------------------|
-| 1 | [junit-labs](https://github.com/saurabhahuja71/junit-labs) | Beginner | Unit testing with JUnit |
-| 2 | [learning-java-springboot](https://github.com/saurabhahuja71/learning-java-springboot) | Beginner → Intermediate | Spring Boot learning dump |
-| 3 | [helidon-cloudnative-microservice-sample](https://github.com/saurabhahuja71/helidon-cloudnative-microservice-sample) | Intermediate | Cloud-native Helidon service |
-| 4 | [helidon-rest-db-connection-demo](https://github.com/saurabhahuja71/helidon-rest-db-connection-demo) | Intermediate | REST + database connectivity |
-| 5 | [helidon-openapi-demo](https://github.com/saurabhahuja71/helidon-openapi-demo) | Intermediate | OpenAPI on Helidon |
-| 6 | [helidon-security-demo](https://github.com/saurabhahuja71/helidon-security-demo) | Intermediate | Security patterns |
-| 7 | [helidon-slack-demo](https://github.com/saurabhahuja71/helidon-slack-demo) | Intermediate | Integrating external APIs (Slack) |
-| 8 | [react-java-todo](https://github.com/saurabhahuja71/react-java-todo) | Intermediate | React front end + Java backend |
+Do them in order:
+
+| # | Lab | Level | What you'll practice | Status |
+|---|-----|-------|----------------------|--------|
+| 0 | [junit-labs](https://github.com/saurabhahuja71/junit-labs) — *JUnit 5 tutorial for beginners* | Beginner | Unit testing with JUnit Jupiter | README ready |
+| 1 | [helidon-cloudnative-microservice-sample](https://github.com/saurabhahuja71/helidon-cloudnative-microservice-sample) — *Helidon cloud-native REST microservice* | Beginner+ | REST, health, metrics, Docker, K8s | README ready |
+| 2 | [helidon-rest-db-connection-demo](https://github.com/saurabhahuja71/helidon-rest-db-connection-demo) — *Helidon JPA + H2 database* | Intermediate | REST + JPA + transactions | README ready |
+| 3 | [helidon-openapi-demo](https://github.com/saurabhahuja71/helidon-openapi-demo) — *Helidon OpenAPI / Swagger UI* | Intermediate | API documentation | README ready |
+| 4 | [helidon-security-demo](https://github.com/saurabhahuja71/helidon-security-demo) — *Helidon Basic Auth & RBAC* | Intermediate | AuthN / AuthZ / roles | README ready |
+| 5 | [helidon-slack-demo](https://github.com/saurabhahuja71/helidon-slack-demo) — *Helidon Slack webhook* | Intermediate | Outbound integrations | README ready |
+| — | [learning-java-springboot](https://github.com/saurabhahuja71/learning-java-springboot) | Beginner → Intermediate | Spring Boot learning materials | Code-first |
+| — | [react-java-todo](https://github.com/saurabhahuja71/react-java-todo) | Intermediate | React + Java full-stack todo | Code-first |
 
 **Coming soon (private):** `hello-world-java`.
 
@@ -210,4 +212,4 @@ Each lab keeps its **own** license (or none yet). Check the individual repositor
 
 ---
 
-*This is step 1 of an ongoing cleanup: hub first → per-track READMEs → open strong private demos → retire empty shells.*
+*Progress: hub live → **Helidon/JUnit track READMEs done (SEO-optimized)** → next tracks → open strong private demos → retire empty shells.*

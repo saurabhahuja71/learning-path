@@ -46,19 +46,20 @@ These are **practice labs**, not production frameworks. Each track is ordered fr
 
 ## 2. Python · Data · APIs
 
-| # | Lab | Level | What you'll practice |
-|---|-----|-------|----------------------|
-| 1 | [python-by-example](https://github.com/saurabhahuja71/python-by-example) | Beginner | Python patterns by example |
-| 2 | [react-fastapi-todo](https://github.com/saurabhahuja71/react-fastapi-todo) | Intermediate | FastAPI + React todo app |
-| 3 | [pets-updates](https://github.com/saurabhahuja71/pets-updates) | Intermediate | Small product-style Python app |
-| 4 | [sample-regression-model](https://github.com/saurabhahuja71/sample-regression-model) | Beginner (ML) | Minimal regression model |
-| 5 | [datascienceandmachinelearning](https://github.com/saurabhahuja71/datascienceandmachinelearning) | Intermediate | Notebooks / DS & ML practice |
-| 6 | [algotrading-sample](https://github.com/saurabhahuja71/algotrading-sample) | Intermediate | Algo-trading learning project *(README + code being improved)* |
-| 7 | [hello](https://github.com/saurabhahuja71/hello) | Beginner | Multi-arch Docker image basics |
+**Python tutorials for students** — browser playground → FastAPI/Flask full stack → ML notebooks. Each lab has an SEO-friendly README (tutorial title, FAQ, keywords).
+
+| # | Lab | Level | What you'll practice | Status |
+|---|-----|-------|----------------------|--------|
+| 0 | [python-by-example](https://github.com/saurabhahuja71/python-by-example) — *Python in the browser (Pyodide)* | Beginner | Interactive Python playground | README ready |
+| 1 | [react-fastapi-todo](https://github.com/saurabhahuja71/react-fastapi-todo) — *FastAPI + React + PostgreSQL* | Intermediate | Full-stack todo, OpenAPI, Compose | README ready |
+| 2 | [pets-updates](https://github.com/saurabhahuja71/pets-updates) — *Flask Pets + GitHub workshop* | Beginner → Intermediate | Flask/SQLAlchemy + Copilot labs | README ready |
+| 3 | [sample-regression-model](https://github.com/saurabhahuja71/sample-regression-model) — *Linear regression (scikit-learn)* | Beginner (ML) | Bangalore rent prediction | README ready |
+| 4 | [datascienceandmachinelearning](https://github.com/saurabhahuja71/datascienceandmachinelearning) — *NumPy / Pandas notebooks* | Intermediate | Multi-day DS curriculum | README ready |
+| 5 | [algotrading-sample](https://github.com/saurabhahuja71/algotrading-sample) — *Algo trading learning stub* | Intermediate | Datetime + strategy scaffold | README ready |
+
+**Containers companion:** [hello](https://github.com/saurabhahuja71/hello) — multi-arch Docker/buildah Hello World · README ready
 
 **Coming soon (private):** Flask REST demos, cloud-native Python sample.
-
----
 
 ## 3. Java · Helidon microservices
 
@@ -211,4 +212,4 @@ Each lab keeps its **own** license (or none yet). Check the individual repositor
 
 ---
 
-*Progress: hub live → Helidon/JUnit SEO READMEs → **Go track SEO READMEs done** → next (Python or AI) → open private demos → retire empty shells.*
+*Progress: hub live → Helidon → Go → **Python track SEO READMEs done** → next (AI/MCP) → open private demos → retire empty shells.*

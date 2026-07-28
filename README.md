@@ -337,6 +337,19 @@ gh auth refresh -h github.com -s delete_repo
 | **Private only** | `Tradebots71` | Stay off public learning hub |
 
 
+
+### Personal account cleanup (saurabhahuja71)
+
+| Action | Count | Notes |
+|--------|------:|-------|
+| **Archived empty originals** | 20 | Shells with no real code (`test-repo`, empty terraform basics, …) |
+| **Archived personal forks** | 102 | Click-forks / workshops; reversible |
+| **Active keepers (forks)** | 2 | `docker-images`, `oracle-database-operator` (Oracle OSS work) |
+| **Active originals** | ~69 | Curriculum labs + private demos still available |
+
+Profile is much cleaner: **~71 active** vs **~193** before this pass. Un-archive any fork you need for a PR.
+
+
 ### Empty / thin orgs status
 
 | Org | Status | Action taken / next |
@@ -375,4 +388,4 @@ Each lab keeps its **own** license (or none yet). Check the individual repositor
 
 ---
 
-*Progress: hub + curriculum tracks + Oracle Linux + **orgs review** → next: Utilties/empty-org cleanup or open private demos.*
+*Progress: hub + curriculum + OL + orgs + **Utilties/personal archive cleanup** → next: open private demos or admin:org/delete_repo for hard deletes.**Utilties archive + personal archive (122)** → next: open private demos or hard-delete after auth scopes.*

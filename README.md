@@ -30,20 +30,19 @@ These are **practice labs**, not production frameworks. Each track is ordered fr
 
 ## 1. Go · APIs
 
-Learn idiomatic Go, HTTP APIs, gRPC, and workshop-style exercises.
+**Golang tutorials for students** — from Python bridge and language workshops to Gin/Postgres and full-stack **gRPC**. Each lab has an SEO-friendly README (tutorial title, FAQ, keywords).
 
-| # | Lab | Level | What you'll practice |
-|---|-----|-------|----------------------|
-| 1 | [golang-workshop](https://github.com/saurabhahuja71/golang-workshop) | Beginner | Core Go workshop material |
-| 2 | [gotraining-labs](https://github.com/saurabhahuja71/gotraining-labs) | Beginner → Intermediate | Guided training labs |
-| 3 | [goforpython](https://github.com/saurabhahuja71/goforpython) | Beginner | Go mental model if you already know Python |
-| 4 | [fullstack-go-bookapp-example](https://github.com/saurabhahuja71/fullstack-go-bookapp-example) | Intermediate | Small full-stack book app in Go |
-| 5 | [grpc-golang-todo](https://github.com/saurabhahuja71/grpc-golang-todo) | Intermediate | gRPC service + todo domain |
-| 6 | [User-Management-REST-Service](https://github.com/saurabhahuja71/User-Management-REST-Service) | Intermediate | REST service design |
+| # | Lab | Level | What you'll practice | Status |
+|---|-----|-------|----------------------|--------|
+| 0 | [goforpython](https://github.com/saurabhahuja71/goforpython) — *Go for Python developers* | Beginner | Side-by-side Python vs Go | README ready |
+| 1 | [golang-workshop](https://github.com/saurabhahuja71/golang-workshop) — *Golang workshop basics* | Beginner | Arrays, slices, maps, JSON, concurrency | README ready |
+| 2 | [gotraining-labs](https://github.com/saurabhahuja71/gotraining-labs) — *Go training labs* | Beginner → Intermediate | Pointers, structs, interfaces, IO | README ready |
+| 3 | [fullstack-go-bookapp-example](https://github.com/saurabhahuja71/fullstack-go-bookapp-example) — *Gin + PostgreSQL book app* | Intermediate | REST API + HTML templates | README ready |
+| 4 | [grpc-golang-todo](https://github.com/saurabhahuja71/grpc-golang-todo) — *gRPC Go full-stack todo* | Intermediate | gRPC, grpc-gateway, React, Postgres | README ready |
+
+**Related (Java REST design, not Go):** [User-Management-REST-Service](https://github.com/saurabhahuja71/User-Management-REST-Service) — Jakarta EE user CRUD (layered architecture) · README ready
 
 **Coming soon (currently private — will be opened after cleanup):** REST API samples, simple Go API demos.
-
----
 
 ## 2. Python · Data · APIs
 
@@ -212,4 +211,4 @@ Each lab keeps its **own** license (or none yet). Check the individual repositor
 
 ---
 
-*Progress: hub live → **Helidon/JUnit track READMEs done (SEO-optimized)** → next tracks → open strong private demos → retire empty shells.*
+*Progress: hub live → Helidon/JUnit SEO READMEs → **Go track SEO READMEs done** → next (Python or AI) → open private demos → retire empty shells.*

@@ -44,7 +44,13 @@ These are **practice labs**, not production frameworks. Each track is ordered fr
 
 **Related (Java REST design, not Go):** [User-Management-REST-Service](https://github.com/saurabhahuja71/User-Management-REST-Service) — Jakarta EE user CRUD (layered architecture) · README ready
 
-**Coming soon (currently private — will be opened after cleanup):** REST API samples, simple Go API demos.
+**Recently opened (was private):**
+| Lab | Focus |
+|-----|--------|
+| [sample-restapi-go](https://github.com/saurabhahuja71/sample-restapi-go) | Minimal `/books` REST server |
+| [simple-rest-api-in-go](https://github.com/saurabhahuja71/simple-rest-api-in-go) | Go + Postgres + Docker Compose |
+| [demo-container-app](https://github.com/saurabhahuja71/demo-container-app) | Go container + K8s YAML |
+
 
 ## 2. Python · Data · APIs
 
@@ -61,7 +67,13 @@ These are **practice labs**, not production frameworks. Each track is ordered fr
 
 **Containers companion:** [hello](https://github.com/saurabhahuja71/hello) — multi-arch Docker/buildah Hello World · README ready
 
-**Coming soon (private):** Flask REST demos, cloud-native Python sample.
+**Recently opened (was private):**
+| Lab | Focus |
+|-----|--------|
+| [pyhton-flask-sample-app](https://github.com/saurabhahuja71/pyhton-flask-sample-app) | Flask sample (name has historical typo) |
+| [python-rest-api-flask-example-basic-store](https://github.com/saurabhahuja71/python-rest-api-flask-example-basic-store) | Flask store REST API |
+| [cloud-native-python-sample](https://github.com/saurabhahuja71/cloud-native-python-sample) | Flask + SQLite |
+
 
 ## 3. Java · Helidon microservices
 
@@ -80,7 +92,7 @@ Do them in order:
 | — | [learning-java-springboot](https://github.com/saurabhahuja71/learning-java-springboot) | Beginner → Intermediate | Spring Boot learning materials | Code-first |
 | — | [react-java-todo](https://github.com/saurabhahuja71/react-java-todo) | Intermediate | React + Java full-stack todo | Code-first |
 
-**Coming soon (private):** `hello-world-java`.
+**Recently opened:** [hello-world-java](https://github.com/saurabhahuja71/hello-world-java) — Gradle Hello World (Lab 0 companion).
 
 ---
 
@@ -94,7 +106,13 @@ Do them in order:
 | 4 | [raspios-qemu](https://github.com/saurabhahuja71/raspios-qemu) | Intermediate | Raspberry Pi OS under QEMU |
 | 5 | [oraclevpn](https://github.com/saurabhahuja71/oraclevpn) | Intermediate | VPN-related systems work |
 
-**Coming soon (private):** Kubernetes basics, demo container app, Helm basics, single-node kubeadm Vagrant setup.
+**Recently opened (was private):**
+| Lab | Focus |
+|-----|--------|
+| [kubernetes-basics](https://github.com/saurabhahuja71/kubernetes-basics) | nginx Pod/Deploy/Service YAMLs |
+| [helm-basic](https://github.com/saurabhahuja71/helm-basic) | Minimal Helm chart |
+| [demo-container-app](https://github.com/saurabhahuja71/demo-container-app) | App + Docker + K8s |
+
 
 ---
 
@@ -108,7 +126,12 @@ Do them in order:
 | 2 | [oci_ansible_samples](https://github.com/saurabhahuja71/oci_ansible_samples) — *Ansible on OCI* | Intermediate | Playbooks, facts, httpd | README ready |
 | 3 | [terraform-azure-jenkins-sample](https://github.com/saurabhahuja71/terraform-azure-jenkins-sample) — *Jenkins on Azure VM* | Intermediate | azurerm + bootstrap script | README ready |
 
-**Coming soon (private):** AWS/GCP/EKS/GKE Terraform basics, larger Azure web sample, Helm basics.
+**Recently opened (was private):**
+| Lab | Focus |
+|-----|--------|
+| [terraform-gke-app-demo](https://github.com/saurabhahuja71/terraform-gke-app-demo) | GKE cluster with Terraform |
+| [host-dynamic-static-web-azure-terraform-docker-sample](https://github.com/saurabhahuja71/host-dynamic-static-web-azure-terraform-docker-sample) | Azure dual-VM web + Docker/Minikube |
+
 
 ## 6. CI/CD
 
@@ -120,7 +143,7 @@ Do them in order:
 | 2 | [sample-template-repo](https://github.com/saurabhahuja71/sample-template-repo) — *GitHub template hygiene* | Beginner | README, SECURITY, CONTRIBUTING | README ready |
 | — | [terraform-azure-jenkins-sample](https://github.com/saurabhahuja71/terraform-azure-jenkins-sample) | Intermediate | Self-hosted Jenkins via Terraform | README ready |
 
-**Coming soon (private):** Jenkins sample pipelines.
+**Recently opened:** [jenkins-sample](https://github.com/saurabhahuja71/jenkins-sample) — Jenkinsfile + Groovy sample.
 
 ## 7. AI · Agents · MCP
 
@@ -388,4 +411,4 @@ Each lab keeps its **own** license (or none yet). Check the individual repositor
 
 ---
 
-*Progress: hub + curriculum + OL + orgs + **Utilties/personal archive cleanup** → next: open private demos or admin:org/delete_repo for hard deletes.**Utilties archive + personal archive (122)** → next: open private demos or hard-delete after auth scopes.*
+*Progress: hub + curriculum + cleanup archives + **12 private demos opened public** → optional hard-delete scopes / remaining private thin demos.**Utilties/personal archive cleanup** → next: open private demos or admin:org/delete_repo for hard deletes.**Utilties archive + personal archive (122)** → next: open private demos or hard-delete after auth scopes.*

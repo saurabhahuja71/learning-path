@@ -434,14 +434,16 @@ Currently **only `oracle` is public** on the GitHub profile org list. Other orgs
 
 - Student hub: [learning-path](https://github.com/saurabhahuja71/learning-path)
 - Oracle Linux track: [Oracle Linux & systems](#oracle-linux--systems)
-- Profile: [saurabhahuja71.github.io](https://saurabhahuja71.github.io)
+- Website: [onenova.in](http://www.onenova.in)
+- Profile site (GitHub Pages): [saurabhahuja71.github.io](https://saurabhahuja71.github.io)
 
 ## About the author
 
 **Saurabh Ahuja** — Principal Member of Technical Staff (Oracle), cloud & infrastructure, **Oracle Linux**, Kubernetes, Go, operators, and Oracle container images.
 
+- Website: [www.onenova.in](http://www.onenova.in)
 - Profile: [saurabhahuja71](https://github.com/saurabhahuja71)
-- Site: [saurabhahuja71.github.io](https://saurabhahuja71.github.io)
+- GitHub Pages: [saurabhahuja71.github.io](https://saurabhahuja71.github.io)
 - LinkedIn: [saurabhahuja71](https://linkedin.com/in/saurabhahuja71)
 
 ---

@@ -91,3 +91,9 @@ cd projects/cli-todo && cargo run -- list
 - Learning both makes tradeoffs obvious — pick the tool for the job.
 
 **Back to hub:** [learning-path README](../../README.md)
+
+---
+
+## Author
+
+**Saurabh Ahuja** ([@saurabhahuja71](https://github.com/saurabhahuja71)) · Website: [www.onenova.in](http://www.onenova.in)

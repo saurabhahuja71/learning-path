@@ -2,6 +2,8 @@
 
 Thanks for helping make these labs better for students.
 
+Maintainer website: [www.onenova.in](http://www.onenova.in) · GitHub: [@saurabhahuja71](https://github.com/saurabhahuja71)
+
 ## Ways to help
 
 1. **Fix a broken Quick start** — wrong command, missing dependency, outdated version.

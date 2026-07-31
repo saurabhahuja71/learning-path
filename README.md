@@ -19,12 +19,13 @@ These are **practice labs**, not production frameworks. Each track is ordered fr
 | [Go](#1-go--apis) | Backend APIs, gRPC, workshops | 6 |
 | [Python](#2-python--data--apis) | Flask/FastAPI, data, ML intro | 7 |
 | [Java / Helidon](#3-java--helidon-microservices) | Microservices on the JVM | 8 |
+| [**Ruby & Rust**](#ruby--rust-from-scratch) | Full language curricula for Java/Python/Go engineers | 2 + comparisons |
 | [Cloud & Kubernetes](#4-cloud-kubernetes--containers) | Docker, K8s, operators | 5 |
 | [Terraform & IaC](#5-terraform--infrastructure-as-code) | Infra as code (OCI / Azure / AWS ideas) | 3 |
 | [CI/CD](#6-cicd) | GitHub Actions, pipelines | 1 |
 | [AI & Agents](#7-ai--agents--mcp) | MCP, agents, Redis+AI | 4 |
 | [Oracle Linux & systems](#oracle-linux--systems) | OL tutorials, UEK, containers, QEMU, VPN | curated |
-| [Systems & fun projects](#8-systems--side-projects) | Raspberry Pi, VPN, Rust, VB | 6 |
+| [Systems & fun projects](#8-systems--side-projects) | Raspberry Pi, VPN, VB | 5 |
 | [Organizations review](#organizations-review--all-github-orgs) | Every org you belong to + cleanup notes | 7 orgs |
 | [Frontend / fullstack](#9-frontend--fullstack) | React + backend samples | 3 |
 
@@ -93,6 +94,43 @@ Do them in order:
 | — | [react-java-todo](https://github.com/saurabhahuja71/react-java-todo) | Intermediate | React + Java full-stack todo | Code-first |
 
 **Recently opened:** [hello-world-java](https://github.com/saurabhahuja71/hello-world-java) — Gradle Hello World (Lab 0 companion).
+
+---
+
+## Ruby & Rust From Scratch
+
+**Full beginner → intermediate curricula** for engineers who already know Java, Python, or Go. Side-by-side comparisons throughout. Each language is its own repository so tooling stays clean.
+
+| # | Lab | Level | What you'll practice | Status |
+|---|-----|-------|----------------------|--------|
+| 1 | [ruby-from-scratch](https://github.com/saurabhahuja71/ruby-from-scratch) — *Modern Ruby from scratch* | Beginner → Intermediate | Syntax, OOP, blocks/procs, Enumerable, RSpec, metaprogramming, Sinatra API | **README ready** |
+| 2 | [Rust-learning](https://github.com/saurabhahuja71/Rust-learning) — *Rust from scratch (ownership-first)* | Beginner → Intermediate | Ownership/borrowing, structs/enums, traits, Result/Option, iterators, threads + Tokio, smart pointers | **README ready** |
+
+### Hub extras (this repo)
+
+| Resource | Description |
+|----------|-------------|
+| [tracks/ruby-and-rust](./tracks/ruby-and-rust/README.md) | Learning orders, how to study, clone commands |
+| [Comparisons](./tracks/ruby-and-rust/03-comparing-ruby-and-rust/) | Memory (GC vs ownership), concurrency, errors, when to choose which, syntax cheatsheet |
+| [Capstones](./tracks/ruby-and-rust/04-real-world-projects/README.md) | Polyglot / real-world project ideas |
+| [Resources](./tracks/ruby-and-rust/resources.md) | Books, docs, communities |
+
+### Suggested path
+
+1. Read [tracks/ruby-and-rust](./tracks/ruby-and-rust/README.md)  
+2. Clone both curricula  
+3. **Option A (recommended for app engineers):** Ruby first → comparisons → Rust  
+4. **Option B:** Rust first (if you care about systems/performance)  
+5. Finish with a [capstone](./tracks/ruby-and-rust/04-real-world-projects/README.md)
+
+```bash
+git clone https://github.com/saurabhahuja71/ruby-from-scratch.git
+git clone https://github.com/saurabhahuja71/Rust-learning.git
+# optional: this hub for comparisons
+git clone https://github.com/saurabhahuja71/learning-path.git
+```
+
+**SEO / tags:** `ruby` `rust` `from-scratch` `ownership` `tutorial` `java` `python` `go` `learning-path`
 
 ---
 
@@ -216,7 +254,8 @@ Personal working fork (for PRs only—prefer upstream for students): [saurabhahu
 |-----|--------|
 | [raspios-qemu](https://github.com/saurabhahuja71/raspios-qemu) | Boot Raspberry Pi OS under QEMU |
 | [oraclevpn](https://github.com/saurabhahuja71/oraclevpn) | VPN project |
-| [Rust-learning](https://github.com/saurabhahuja71/Rust-learning) | Rust practice |
+| [Rust-learning](https://github.com/saurabhahuja71/Rust-learning) | **Full Rust curriculum** — see [Ruby & Rust track](#ruby--rust-from-scratch) |
+| [ruby-from-scratch](https://github.com/saurabhahuja71/ruby-from-scratch) | **Full Ruby curriculum** — see [Ruby & Rust track](#ruby--rust-from-scratch) |
 | [vbcookbook](https://github.com/saurabhahuja71/vbcookbook) | Visual Builder cookbook |
 | [vbstudiolabs](https://github.com/saurabhahuja71/vbstudiolabs) | VB Studio labs |
 | [hello_flutter](https://github.com/saurabhahuja71/hello_flutter) | Flutter sample *(needs content)* |
@@ -239,12 +278,14 @@ If you are early in college and want a structured month:
 
 | Week | Focus | Labs |
 |------|--------|------|
-| 1 | Language fundamentals | `python-by-example` **or** `golang-workshop` |
-| 2 | First API | `react-fastapi-todo` **or** `grpc-golang-todo` |
+| 1 | Language fundamentals | `python-by-example` **or** `golang-workshop` **or** start [ruby-from-scratch](https://github.com/saurabhahuja71/ruby-from-scratch) / [Rust-learning](https://github.com/saurabhahuja71/Rust-learning) |
+| 2 | First API | `react-fastapi-todo` **or** `grpc-golang-todo` **or** Sinatra chapter in `ruby-from-scratch` |
 | 3 | Containers | `hello` + read about multi-arch builds |
 | 4 | Cloud / automation | `oci_terraform_samples` **or** `github-action-demo` |
 
 Stretch: pick one Helidon lab or `mcp-demo` in week 4 if you already know Java/AI.
+
+**Dedicated language deep-dive (8 weeks):** follow [Ruby & Rust From Scratch](#ruby--rust-from-scratch) — Ruby first or Rust first — using the comparisons in [`tracks/ruby-and-rust`](./tracks/ruby-and-rust/README.md).
 
 ---
 

@@ -4,11 +4,15 @@ Curated hands-on repositories from [saurabhahuja71](https://github.com/saurabhah
 
 These are **practice labs**, not production frameworks. Each track is ordered from easier → harder when possible. Start with one track; finish a lab before jumping tracks.
 
+> **Featured workshop:** [Python by Example — interactive Python in the browser with Pyodide](https://github.com/saurabhahuja71/python-by-example)
+> — start coding without installing Python. Companion write-up: [onenova.in/blog/run-python-in-browser-pyodide](https://onenova.in/blog/run-python-in-browser-pyodide/).
+
 > **How to use this hub**
 > 1. Pick a track that matches what you want to learn.
 > 2. Open the lab repo → read its README → follow **Quick start**.
 > 3. When a lab still has a thin README, treat the code as the source of truth and open an issue if you get stuck.
 > 4. Prefer building something small of your own after each lab.
+> 5. Readable mirror of this hub: [onenova.in/learning-path](https://onenova.in/learning-path).
 
 ---
 
@@ -20,9 +24,9 @@ These are **practice labs**, not production frameworks. Each track is ordered fr
 | [Python](#2-python--data--apis) | Flask/FastAPI, data, ML intro | 7 |
 | [Java / Helidon](#3-java--helidon-microservices) | Microservices on the JVM | 8 |
 | [**Ruby & Rust**](#ruby--rust-from-scratch) | Full language curricula for Java/Python/Go engineers | 2 + comparisons |
-| [Cloud & Kubernetes](#4-cloud-kubernetes--containers) | Docker, K8s, operators | 5 |
-| [Terraform & IaC](#5-terraform--infrastructure-as-code) | Infra as code (OCI / Azure / AWS ideas) | 3 |
-| [CI/CD](#6-cicd) | GitHub Actions, pipelines | 1 |
+| [Cloud & Kubernetes](#4-cloud-kubernetes--containers) | Docker, K8s, operators | 5 + demos |
+| [Terraform & IaC](#5-terraform--infrastructure-as-code) | Infra as code (OCI / Azure / AWS ideas) | 3 + demos |
+| [CI/CD](#6-cicd) | GitHub Actions, pipelines | 2 + |
 | [AI & Agents](#7-ai--agents--mcp) | MCP, agents, Redis+AI | 4 |
 | [Oracle Linux & systems](#oracle-linux--systems) | OL tutorials, UEK, containers, QEMU, VPN | curated |
 | [Systems & fun projects](#8-systems--side-projects) | Raspberry Pi, VPN, VB | 5 |
@@ -152,6 +156,18 @@ git clone https://github.com/saurabhahuja71/learning-path.git
 | [helm-basic](https://github.com/saurabhahuja71/helm-basic) | Minimal Helm chart |
 | [demo-container-app](https://github.com/saurabhahuja71/demo-container-app) | App + Docker + K8s |
 
+**Companion reading (Oracle Database on Kubernetes — production-style):**
+
+| Guide | Topic |
+|-------|--------|
+| [Provision Oracle Restart on Kubernetes](https://onenova.in/blog/provision-oracle-restart-database-kubernetes-operator/) | OraOperator Restart CR |
+| [Provision Oracle RAC on Kubernetes](https://onenova.in/blog/provision-oracle-rac-database-kubernetes-operator/) | OraOperator RAC CR |
+| [True Cache next to K8s apps](https://onenova.in/blog/deploy-oracle-true-cache-kubernetes-rac-primary/) | True Cache SIDB + RAC primary |
+| [Data Guard on Kubernetes](https://onenova.in/blog/deploy-oracle-data-guard-kubernetes-sidb/) | SIDB + DataguardBroker (+ TCPS) |
+| [CMAN + SIDB on Kubernetes](https://onenova.in/blog/deploy-oracle-cman-sidb-kubernetes/) | ConnectionManager SQL\*Net front door |
+| Hub overview blog | [Build a cloud-native learning path](https://onenova.in/blog/build-cloud-native-learning-path/) |
+
+Official operator docs: [oracle/oracle-database-operator](https://github.com/oracle/oracle-database-operator) · [docs/sidb](https://github.com/oracle/oracle-database-operator/tree/main/docs/sidb) · [docs/cman](https://github.com/oracle/oracle-database-operator/tree/main/docs/cman)
 
 ---
 
@@ -434,18 +450,20 @@ Currently **only `oracle` is public** on the GitHub profile org list. Other orgs
 ### Related links
 
 - Student hub: [learning-path](https://github.com/saurabhahuja71/learning-path)
+- Readable mirror: [onenova.in/learning-path](https://onenova.in/learning-path)
 - Oracle Linux track: [Oracle Linux & systems](#oracle-linux--systems)
-- Website: [onenova.in](http://www.onenova.in)
+- Website: [onenova.in](https://onenova.in)
 - Profile site (GitHub Pages): [saurabhahuja71.github.io](https://saurabhahuja71.github.io)
 
 ## About the author
 
-**Saurabh Ahuja** — Principal Member of Technical Staff (Oracle), cloud & infrastructure, **Oracle Linux**, Kubernetes, Go, operators, and Oracle container images.
+**Saurabh Ahuja** — Sr Principal Data Systems Engineer (Oracle), cloud & infrastructure, **Oracle Linux**, Kubernetes, Go, Oracle Database operators, and Oracle container images.
 
-- Website: [www.onenova.in](http://www.onenova.in)
+- Website: [onenova.in](https://onenova.in)
+- Learning path: [onenova.in/learning-path](https://onenova.in/learning-path)
 - Profile: [saurabhahuja71](https://github.com/saurabhahuja71)
 - GitHub Pages: [saurabhahuja71.github.io](https://saurabhahuja71.github.io)
-- LinkedIn: [saurabhahuja71](https://linkedin.com/in/saurabhahuja71)
+- LinkedIn: [saurabhahuja71](https://www.linkedin.com/in/saurabhahuja71)
 
 ---
 
@@ -455,4 +473,4 @@ Each lab keeps its **own** license (or none yet). Check the individual repositor
 
 ---
 
-*Progress: hub + curriculum + cleanup archives + **12 private demos opened public** → optional hard-delete scopes / remaining private thin demos.**Utilties/personal archive cleanup** → next: open private demos or admin:org/delete_repo for hard deletes.**Utilties archive + personal archive (122)** → next: open private demos or hard-delete after auth scopes.*
+*Hub status: curriculum tracks + Ruby/Rust map + public demos linked. Prefer opening issues on individual lab repos when a README is thin. Org cleanup (empty/experimental orgs) is tracked in the Organizations review section above.*
